@@ -34,12 +34,18 @@
 * [CGIとは｜Common Gateway Interface - 意味/定義 ： IT用語辞典](http://e-words.jp/w/CGI.html)
 
 ## セッション
-* 複数ページにまたがるユーザの状態の情報を保持しておく仕組み
+* 複数ページにまたがるユーザの状態の情報を保持しておくサーバベースの仕組み
+* ブラウザを閉じるまで情報を保持する
 
 ### 参考文献
 * [PHP: 基本的な使用法 - Manual](http://php.net/manual/ja/session.examples.basic.php)
+* [Cookieとセッションをちゃんと理解する - Qiita](http://qiita.com/hththt/items/07136ad74127999df271)
+* [PHPでセッションを使う方法【初心者向け】 | TechAcademyマガジン](http://techacademy.jp/magazine/4970)
 
 ## PHP と Cookie の関係
-* 
+* ブラウザを閉じても情報がクライアント側で保持される仕組み
+* ユーザが改ざんすることもできるため、管理するデータの種別については考える必要がある
 
 ### 参考文献
+* [PHPでCookie(クッキー)を使う方法【初心者向け】 | TechAcademyマガジン](http://techacademy.jp/magazine/4961)
+* [ThinkIT 第8回：Cookieとセッション情報 (1/3)](https://thinkit.co.jp/free/article/0604/7/8/)
