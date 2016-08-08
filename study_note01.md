@@ -3,6 +3,7 @@
 ## PHP
 
 ### PHP の基礎
+
 #### 参考文献
 * [PHPの基礎の基礎の基礎 - Qiita](http://qiita.com/konojunya/items/492e8114e6bd55344731)
 
@@ -50,3 +51,26 @@
 #### 参考文献
 * [PHPでCookie(クッキー)を使う方法【初心者向け】 | TechAcademyマガジン](http://techacademy.jp/magazine/4961)
 * [ThinkIT 第8回：Cookieとセッション情報 (1/3)](https://thinkit.co.jp/free/article/0604/7/8/)
+
+## データベース
+
+### テーブル
+* 二次元的な表であらわされるデータ管理の単位
+
+#### 参考文献
+* [新入社員必読、データベースの基本を理解しよう - データベースの構造はどうなっているの？：ITpro](http://itpro.nikkeibp.co.jp/article/COLUMN/20130416/471169/)
+
+### レコード
+* テーブルに含まれる横1列の行
+
+#### 参考文献
+* [新入社員必読、データベースの基本を理解しよう - データベースの構造はどうなっているの？：ITpro](http://itpro.nikkeibp.co.jp/article/COLUMN/20130416/471169/)
+
+### バリデーション
+* 入力値がルールに従っているかチェックする仕組み
+  * パスワードは8文字以上か？
+  * ユーザ名はユニークか？
+
+#### 参考文献
+* [データバリデーション](http://book.cakephp.org/2.0/ja/models/data-validation.html)
+* [バリデーションとは｜validation｜バリデート｜validate - 意味/定義 ： IT用語辞典](http://e-words.jp/w/%E3%83%90%E3%83%AA%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html)
