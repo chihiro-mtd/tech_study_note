@@ -74,3 +74,20 @@
 #### 参考文献
 * [データバリデーション](http://book.cakephp.org/2.0/ja/models/data-validation.html)
 * [バリデーションとは｜validation｜バリデート｜validate - 意味/定義 ： IT用語辞典](http://e-words.jp/w/%E3%83%90%E3%83%AA%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html)
+
+### CRUD
+* Webアプリの4つの基本動作の略称
+  * Create - 新規作成
+  * Read - 表示
+  * Update - 更新
+  * Destroy - 削除
+
+#### 参考文献
+* [CRUDの基礎とindexアクション](http://igarashikuniaki.net/rails_textbook/crud.html)
+
+### SQL
+* Structured Query Language の略称
+* リレーショナルデータベースを操作するための言語
+
+#### 参考文献
+* [データベース基礎 SQL入門1 1章-神田IT School - JAVA、LINUX、PHPのプログラマー・ＳＥ育成のIT教育専門修教機関](http://se-java-school.com/itstudy/database/intro_db_jdbc/sqltext_01.php)
