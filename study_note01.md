@@ -216,3 +216,95 @@
 
 #### 参考文献
 * [杉浦とホームページ製作～ＵＲＬを書き換えろ！「Rewrite 機能とは」](http://www.nurs.or.jp/~sug/homep/rewrite/rewrite1.htm)
+
+### ドキュメントルート
+* Webサイトのトップディレクトリ
+
+#### 参考文献
+* [ドキュメントルートについて | baser CMS - 国産オープンソース！フリー（無料）で『コーポレートサイトにちょうどいいCMS』](http://basercms.net/manuals/1/etc/1.html)
+
+### FQDN
+* Fully Qualified Domain Name の略称、別名「絶対ドメイン名」
+* DNSの階層構造において、ある特定のノードに付けられたドメイン名を表記する際、 そのノードからDNSのルートまでの全てのラベルを並べて書いたもの
+
+#### 参考文献
+* [インターネット用語1分解説～FQDNとは～ - JPNIC](https://www.nic.ad.jp/ja/basics/terms/fqdn.html)
+
+### ドメイン
+* インターネット上におけるコンピュータの「住所」を記述したもの
+* ピリオドで句切られた単語のうち、最も右端の単語をトップレベルドメインと呼び、国や目的によって分類されている
+  * gTLD : Generic Top Level Domain、誰でも取得できる
+    * .com
+    * .net
+    * .org
+  * ccTLD : Country Code Top Level Domain、国や地域に割り当てられる
+    * .uk
+    * .me
+  * 汎用JP : 個人、組織を問わず日本に住所があれば登録可能。日本語ドメインも取得できる
+    * .jp
+  * 属性型JP : 組織の種別ごとに区別されたもの
+    * .co.jp
+    * .ac.jp
+
+#### 参考文献
+* [ドメインとは | ムームードメイン](https://muumuu-domain.com/?mode=guide&state=intro)
+* [JPドメイン名の種類 | JPドメイン名について | JPRS](https://jprs.jp/about/jp-dom/)
+
+### リクエストの内容 - リクエストヘッダー
+* ブラウザからWebサーバに対してWebサイトの開示要求を送信する
+* リクエストヘッダーにはCookieの情報、使用しているブラウザの種類等が記述されている
+
+#### 参考文献
+* [http（通信プロトコル）とは？httpの仕組みと、通信内容（リクエストヘッダとレスポンスヘッダ）の確認手順まとめ](http://viral-community.com/other-it/http-1873/)
+
+### レスポンスの内容 - レスポンスヘッダー
+* Webサーバからブラウザに対して開示許可を送る
+* レスポンスヘッダーにはサーバ情報、通信の状態等が記述されている
+
+#### 参考文献
+* [http（通信プロトコル）とは？httpの仕組みと、通信内容（リクエストヘッダとレスポンスヘッダ）の確認手順まとめ](http://viral-community.com/other-it/http-1873/)
+
+### URLエンコード
+* URLとして使用して良い文字列のみでURLが構成されるよう変換すること
+  * 例 : 検索サイトにおいて、検索キーワードがURL末尾に付与される場合、日本語で検索すると正しいURLにならない。そのため、適切に変換して付与する必要がある。
+
+#### 参考文献
+* [URLエンコードと検索エンジン](http://www.bousaid.dyndns.org/public/software/urlencode/index.php)
+* [URLエンコードとは｜パーセントエンコーディング｜URIエンコード - 意味/定義 ： IT用語辞典](http://e-words.jp/w/URL%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89.html)
+
+### クエリパラメータ
+* 情報をWebサーバに送るためにURLに付加する値
+  * 例 : 「example」というWebサイト内でサイト内検索したら以下のようなURLになった。   
+  http://example.com/?a=b  
+    * 「?」は以降クエリパラメータであることを示す
+    * 「a」という名前の変数の値として「b」を指定している
+
+#### 参考文献
+* [「URLクエリパラメータ」とは何か、 どのような場合に「除外」するべきなのか？［第4回］ | Googleアナリティクスとは／衣袋教授のGoogleアナリティクス入門講座 | Web担当者Forum](http://web-tan.forum.impressrd.jp/e/2012/04/26/12663)
+
+### Cron
+* ジョブを自動実行・定期実行するための仕組み
+  * 例 : 深夜にシステムのバックアップを自動でとっておく
+
+#### 参考文献
+* [cron の設定ガイド](https://www.express.nec.co.jp/linux/distributions/knowledge/system/crond.html)
+
+### API
+* Application Program Interfaceの略称
+* プログラミングの際に利用できる命令や規則、関数等の集合
+* 外部からも機能を呼び出して利用できるため、開発者にとってはゼロから開発するより手軽になる
+
+#### 参考文献
+* [APIとは - 意味の解説｜ITトレンドのIT用語集](http://it-trend.jp/words/api)
+
+### REST API
+* REST の考え方に沿った API
+  * REST : Representational State Transfer
+    * 情報やデータ(リソース)はURLによって一意に識別
+    * リソースに対する処理はHTTPで定義されているGET、POST、PUT、DELETE、HEAD、OPTIONS、TRACEのみを使用
+    * リソースをHTMLやテキスト、XML、JSON、バイナリ等様々な形式で表現できる。また、関連するデータはリンクとしてデータに含める
+    * 状態はクライアント側で保持するため、必要な情報は全てリクエストに含める
+* 多様なデータ形式に対応でき、負荷分散も容易なAPIがシンプルに作成可能
+
+#### 参考文献
+* [3つのフレームワークで学ぶエンタープライズJava開発入門（3）：いまさら聞けないRESTの基礎知識、JAX-RSを使ったREST APIの作り方と使い方 (1/3) - ＠IT](http://www.atmarkit.co.jp/ait/articles/1604/18/news020.html)
