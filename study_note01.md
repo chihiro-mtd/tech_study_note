@@ -410,3 +410,19 @@
 
 #### 参考文献
 * [PHP Laravelのartisanコマンドのまとめ | urashita.com](http://urashita.com/archives/7174)
+
+## HTML5
+
+### ローカルストレージ
+* Webブラウザにデータを保存する仕組み
+* ページを閉じても保存したデータは保持される
+
+#### 参考文献
+* [STEP1-6.ローカルストレージを使ってみる / チームラボ オンラインスキルアップ課題](http://team-lab.github.io/skillup-nodejs/1/6.html)
+
+### CSS - CSS3
+* 従来のCSSにさらに装飾や機能を拡張したもの
+* 従来の記述と混在が可能である
+
+#### 参考文献
+* [CSS3とは？ 機能が増えて便利になったスタイルシート [ホームページ作成] All About](http://allabout.co.jp/gm/gc/376450/)
