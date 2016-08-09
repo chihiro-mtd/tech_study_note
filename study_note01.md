@@ -450,3 +450,41 @@
 
 #### 参考文献
 * [アクティビティ図(Activity Diagram) - UML入門 - IT専科](http://www.itsenka.com/contents/development/uml/activity.html)
+
+## セキュリティ
+
+### ディレクトリトラバーサル
+* サーバ管理者が公開・許可していないファイルにアクセスする攻撃手法
+* 入力されたパスからファイルを読み込むようなソフトウェアにおいて、相対パス表記を用いて任意のファイルに不正にアクセスをかけること
+
+#### 参考文献
+* [情報セキュリティ入門 - 脆弱性を利用した攻撃手法（3） --- ディレクトリ・トラバーサルとOSコマンド・インジェクション：ITpro](http://itpro.nikkeibp.co.jp/article/COLUMN/20070130/260021/)
+* [脆弱性コラム - 第7回｜AppScan｜テクマトリックス株式会社](https://www.techmatrix.co.jp/security/watchfire/column/check7.html)
+* [ディレクトリトラバーサル CapmNetwork](http://capm-network.com/?tag=%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%83%88%E3%83%A9%E3%83%90%E3%83%BC%E3%82%B5%E3%83%AB)
+
+### XSS
+* CROSS Site Scriptingの略称
+* 入力された値によって動的に変化するWebサイトにおいて、不正なスクリプトを入力する攻撃手法
+* 第三者に不正なスクリプトを実行させ、攻撃対象のサーバに攻撃する。この時、第三者が入力した情報やCookieを抜き取られるといった被害も想定される
+
+#### 参考文献
+* [クロスサイトスクリプティング対策の基本（前編）：クロスサイトスクリプティング脆弱性とは？ - ＠IT](http://www.atmarkit.co.jp/ait/articles/0211/09/news002.html)
+* [ASCII.jp：拡がるWebの脅威と対策を理解しよう (5/6)｜初心者歓迎！ネットワークセキュリティ入門](http://ascii.jp/elem/000/000/452/452083/index-5.html)
+* [クロスサイトスクリプティング（XSS）とは？仕組み・脅威から対策についてのまとめ](http://viral-community.com/blog/xss-1835/)
+
+### CSRF
+* Cross-site Request Forgeryの略称、別名「リクエスト強要」
+* 攻撃者が用意したWebページにユーザがアクセスすると、攻撃対象のサーバに不正なリクエストが送信され、ユーザが意図していない処理が実行される
+  * 掲示板等への不正な書き込み及び大量の書き込みによるDoS攻撃
+  * ショッピングサイトの決済やサービスの退会等の重要な処理をユーザの意図とは関係なく実行
+
+#### 参考文献
+* [IPA ISEC　セキュア・プログラミング講座：Webアプリケーション編　第4章 セッション対策：リクエスト強要（CSRF）対策](https://www.ipa.go.jp/security/awareness/vendor/programmingv2/contents/301.html)
+* [クロスサイトリクエストフォージェリ（CSRF）とは - 脅威と対策 | トレンドマイクロ](http://www.trendmicro.co.jp/jp/security-intelligence/threat-solution/csrf/index.html)
+
+### SQL injection
+* Webページにおいて、データベースと連携している入力欄に不正なデータベース処理命令を記述する攻撃手法
+* データベースの情報漏えい、不正アクセス等に繋がる危険性がある
+
+#### 参考文献
+* [SQLインジェクションへの対策｜情報管理担当者の情報セキュリティ対策｜企業・組織の対策｜国民のための情報セキュリティサイト](http://www.soumu.go.jp/main_sosiki/joho_tsusin/security/business/admin/06.html)
