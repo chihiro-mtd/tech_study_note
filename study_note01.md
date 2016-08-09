@@ -148,4 +148,71 @@
 ### 参考文献
 * [第1回　トランザクションについて｜オススメ！OSS-DB情報｜OSS-DB道場｜受験対策｜DBスペシャリストを認定する資格 OSS-DB技術者認定試験](http://www.oss-db.jp/measures/dojo_01.shtml)
 
- 
+## WEBシステム読み解き
+
+### ポート番号
+* TCP/IP通信においてコンピュータが通信に使用するプログラムを識別するための番号
+*  TCP/IPネットワーク上でコンピュータ同士が通信を行う際には、IPアドレスとポート番号がセットとして扱われる
+* IPアドレスはコンピュータの識別を目的に利用されるが、ポート番号はどのプログラムにパケットを届けるかを指定するもの
+
+#### 参考文献
+* [インターネット用語1分解説～ポート番号とは～ - JPNIC](https://www.nic.ad.jp/ja/basics/terms/port-number.html)
+
+### Webサーバ & DBサーバ
+* クライアントからWebサーバへリクエストを送り、それに対しレスポンスを返す
+* WebサーバからDBサーバへリクエストを送り、それに対しレスポンスを返す
+* 作業内容の切り離しを行うことで負荷分散や改修がしやすい
+
+#### 参考文献
+* [超絶初心者のためのサーバとクライアントの話 - Qiita](http://qiita.com/shuntaro_tamura/items/ae55b99deb9e2a170754#4db%E3%82%B5%E3%83%BC%E3%83%90%E3%81%A8db%E3%82%AF%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%88%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF)
+* [Webアプリの常識をJSPとStrutsで身につける（3）：Webアプリにおけるサーバとクライアントの常識 (1/3) - ＠IT](http://www.atmarkit.co.jp/ait/articles/0809/01/news162.html)
+
+### FTP
+* File Transfer Protocol の略称
+* サーバとクライアント間でファイルを転送するためのプロトコル
+* ユーザ認証により操作権限の付与と管理が可能
+
+#### 参考文献
+* [FTP - インターネット用語辞典 - ｜ OCN](http://www.ocn.ne.jp/support/words/def/FTP.html)
+
+### ssh
+* Secure Shell の略称
+* 暗号や認証の技術を利用して安全にリモートコンピュータと通信するためのプロトコル
+
+#### 参考文献
+* [インフラエンジニアじゃなくても押さえておきたいSSHの基礎知識 - Qiita](http://qiita.com/tag1216/items/5d06bad7468f731f590e)
+
+### scp
+* sshを利用してネットワーク上のホスト間でファイルコピーを行うためのコマンド
+
+#### 参考文献
+* [SCP (1)](http://euske.github.io/openssh-jman/scp.html)
+
+### Apache
+* Webサーバの一種
+* 信頼性の高さ、対応プラットフォームの多さ、機能性の良さやオープンソースである点からWebサーバの定番となっている
+
+#### 参考文献
+* [ThinkIT 第1回：Apacheはインターネットで使うWebサーバなのだ (3/3)](https://thinkit.co.jp/cert/article/0706/3/1/3.htm)
+
+### Nginx
+* Webサーバの一種
+* 高速、メモリ消費が少ない、軽量といった点で注目されている
+* モジュールを追加することにより様々な機能を利用できる
+
+#### 参考文献
+* [これから始める人のためのNginx（1）：高速・軽量・高機能……Nginxの基礎知識 (1/2) - ＠IT](http://www.atmarkit.co.jp/ait/articles/1406/17/news013.html)
+
+### リダイレクト
+* リクエストされたURLとは別のURLに移動させること
+
+#### 参考文献
+* [不正なリダイレクト - Search Console ヘルプ](https://support.google.com/webmasters/answer/2721217?hl=ja)
+
+### リライト
+* アクセスされたURLを正規表現によって書きかえ処理すること
+* リダイレクト処理は実URLしか指定できないが、リライト処理により大量の転送処理を実現できる
+* 接続元やブラウザによって場合分け、振り分けすることもできる
+
+#### 参考文献
+* [杉浦とホームページ製作～ＵＲＬを書き換えろ！「Rewrite 機能とは」](http://www.nurs.or.jp/~sug/homep/rewrite/rewrite1.htm)
