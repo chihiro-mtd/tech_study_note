@@ -426,3 +426,27 @@
 
 #### 参考文献
 * [CSS3とは？ 機能が増えて便利になったスタイルシート [ホームページ作成] All About](http://allabout.co.jp/gm/gc/376450/)
+
+## 設計
+
+### 機能設計書
+* 開発するソフトウェアについて、どのような機能を持たせるか、どのように実装するかを規定する
+* プロジェクト内の共通認識を形成することが目的
+
+#### 参考文献
+* [仕様書の書き方について - なんとな～くしあわせ？の日記](http://nantonaku-shiawase.hatenablog.com/entry/2014/05/18/012107)
+* [機能設計とは｜function design｜FD - 意味/定義 ： IT用語辞典](http://e-words.jp/w/%E6%A9%9F%E8%83%BD%E8%A8%AD%E8%A8%88.html)
+
+### 機能構成図
+* 機能を階層的に 3x3 のマトリクスで表現した図
+* システムの対象範囲を明らかにするのが目的
+
+#### 参考文献
+* [「業務と情報システムは整合していますか？（２）」 | 株式会社オージス総研](http://www.ogis-ri.co.jp/rad/webmaga/rwm20110705.html)
+
+### アクティビティ図
+* 一連の手続きを表現するための図
+* ある事象の開始から終了までを機能が実行される順序に従って記述する
+
+#### 参考文献
+* [アクティビティ図(Activity Diagram) - UML入門 - IT専科](http://www.itsenka.com/contents/development/uml/activity.html)
