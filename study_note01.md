@@ -308,3 +308,22 @@
 
 #### 参考文献
 * [3つのフレームワークで学ぶエンタープライズJava開発入門（3）：いまさら聞けないRESTの基礎知識、JAX-RSを使ったREST APIの作り方と使い方 (1/3) - ＠IT](http://www.atmarkit.co.jp/ait/articles/1604/18/news020.html)
+
+### JSON
+* JavaScript Object Notationの略称
+* 人間も計算機も容易に扱えるデータ交換フォーマット
+* 2つの構造を基に構成されている
+ * 名前 : 値 の集合 - オブジェクトのような構造を持つ
+ * 値の順序付きリスト - 配列のような構造を持つ
+
+#### 参考文献
+* [JSON](http://www.json.org/json-ja.html)
+
+### XML
+* eXtensible Markup Languageの略称
+* 文書やデータの意味や構造を記述するためのマークアップ言語
+* 独自タグの設定や構造化ができるため、HTMLに比べて後から意味の読解がしやすい
+
+#### 参考文献
+* [第01回　何はともあれXMLって何？ | XMLデータベース・オフショアITアウトソーシングのサイバーテック](http://www.cybertech.co.jp/xml/contents/xmlxmldb/serial/_xmlbeginner1.php)
+* [XMLとは｜Extensible Markup Language - 意味/定義 ： IT用語辞典](http://e-words.jp/w/XML.html)
