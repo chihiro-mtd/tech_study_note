@@ -564,3 +564,32 @@
 
 #### 参考文献
 * [IPA ISEC　セキュア・プログラミング講座：C/C++言語編　第2章 脆弱性回避策とソフトウェア開発工程：セキュリティテスト](https://www.ipa.go.jp/security/awareness/vendor/programmingv2/contents/c102.html)
+
+## AWS
+
+### Aurora
+* リレーショナルデータベースエンジン
+* MySQLと互換性を持っている(性能は5倍増し！)
+
+#### 参考文献
+* [よくある質問 - Amazon Aurora | AWS](https://aws.amazon.com/jp/rds/aurora/faqs/)
+* [Amazon RDS for Aurora について知りたい28のこと (28 Questions about Aurora) - yoshidashingo](http://yoshidashingo.hatenablog.com/entry/2014/11/13/223225)
+* [Amazon RDSの新しいDBエンジン「Aurora」について気になるトコロ #reinvent ｜ Developers.IO](http://dev.classmethod.jp/cloud/aws/new-rds-database-engine-aurora-faq/)
+
+### EC2
+* 仮想プライベートサーバのレンタルサービス
+* 従来のレンタルサーバとは異なり、時間単位の料金体系になっている
+* 急なアクセス増加にも耐えられる堅牢性を持っている
+
+#### 参考文献
+* [Amazon EC2 S3とは【EC2をこれから始めたい方へ】](http://www.synaesthesia.jp/amazon/ec2/index.php)
+* [わずか5分！？ AWSのEC2でクラウドなウェブサーバーを構築してみた | 株式会社LIG](http://liginc.co.jp/web/programming/server/39969)
+* [Amazon EC2 とは - Amazon Elastic Compute Cloud](http://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/concepts.html)
+
+### Lambda
+* 何らかのイベントを受けて、別の処理を呼び出す仕組みを請け負うサービス
+* 従来であれば、イベント発生元の観測や変更検知、それに伴うインフラの整備等行う必要があったが、それらを肩代わりしてくれる
+
+#### 参考文献
+* [初めてのAWS Lambda　～AWS Lambdaで始めるイベントドリブンアプリケーション (1/5)：CodeZine（コードジン）](https://codezine.jp/article/detail/8446)
+* [AWS 再入門 AWS Lambda 編 ｜ Developers.IO](http://dev.classmethod.jp/cloud/aws/cm-advent-calendar-2015-aws-re-entering-aws-lambda/)
