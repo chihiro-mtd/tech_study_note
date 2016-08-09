@@ -327,3 +327,71 @@
 #### 参考文献
 * [第01回　何はともあれXMLって何？ | XMLデータベース・オフショアITアウトソーシングのサイバーテック](http://www.cybertech.co.jp/xml/contents/xmlxmldb/serial/_xmlbeginner1.php)
 * [XMLとは｜Extensible Markup Language - 意味/定義 ： IT用語辞典](http://e-words.jp/w/XML.html)
+
+## フレームワーク
+
+### フレームワーク
+* システム開発のために提供されている機能群及び骨組み
+* 少ない時間的コストで意図する機能やデザインを実現できる
+
+#### 参考文献
+* [フレームワークとは？今更聞けないWebフレームワークを始めから丁寧にCode部](https://blog.codecamp.jp/web_framework)
+
+### ライブラリ
+* ある特定の機能を持ったプログラムを別のプログラムから利用できるようにした部品群
+
+#### 参考文献
+* [ライブラリとは｜library｜ライブラリー - 意味/定義 ： IT用語辞典](http://e-words.jp/w/%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA.html)
+
+### PHPフレームワーク
+* 様々な機能で開発者の素早い構築をサポートしている
+  * CakePHP
+  * Symfony
+  * Laravel
+  * FuelPHP  
+  他
+
+#### 参考文献
+* [人気のPHPフレームワーク比較！おすすめの15選まとめました](http://eng-entrance.com/php_framework)
+
+### JSフレームワーク
+* それぞれの設計思想に基づき、様々な機能が提供されている
+  * AngularJS
+  * React
+  * Riot  
+  他
+
+#### 参考文献
+* [【2016年夏】個人的に注目なフロントサイドで使えるJavaScriptフレームワークまとめ - Qiita](http://qiita.com/RyutaYoshi/items/35627978de3764fa4451)
+
+### MVC
+* Model View Controllerの略称
+* 処理を上記の3つの役割に分割して実装する手法
+  * Model : 処理のメインロジックやデータアクセスを担当
+  * View : 画面表示(HTML出力)を担当
+  * Controller : クライアントからのリクエストを直接受理し、ModelとViewの制御を担当
+
+#### 参考文献
+* [PHPのオブジェクト指向入門 | オブジェクト指向PHP.NET](http://www.objective-php.net/mvc/about)
+
+### Polymer
+* JSライブラリの一種
+* Web UIの作成や再利用の簡略化のため開発された経緯を持つ
+* Web UI部品化技術「Web components」を基礎としている
+
+#### 参考文献
+* [Web ComponentsはじめるならPolymerで - apps-gcp](http://www.apps-gcp.com/start-webcomponents-with-polymer/)
+
+### jQuery
+* JSライブラリの一種
+* シンプルな構文、充実した機能性等から人気である
+
+#### 参考文献
+* [jQueryを使う理由 - Qiita](http://qiita.com/mimoe/items/942d63d4eb4e32dd0895)
+
+### Laravel
+* PHPフレームワークの一種
+* 学習コストの少なさや設計思想が時代の流れを汲んでいる点から人気を集めている
+
+#### 参考文献
+* [最新鋭のPHPフレームワーク「Laravel4」でWeb開発 | (1)導入編 | MONSTER DIVE【モンスターダイブ】](http://www.monster-dive.com/blog/web_system/20140328_001128.php)
