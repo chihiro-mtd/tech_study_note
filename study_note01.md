@@ -91,3 +91,61 @@
 
 #### 参考文献
 * [データベース基礎 SQL入門1 1章-神田IT School - JAVA、LINUX、PHPのプログラマー・ＳＥ育成のIT教育専門修教機関](http://se-java-school.com/itstudy/database/intro_db_jdbc/sqltext_01.php)
+
+### MySQL
+* オープンソースのリレーショナルデータベース管理システム
+* マルチユーザ対応なので複数人が同時に利用するWebアプリケーションに適している
+* 非商用利用であれば無償で利用できる
+
+#### 参考文献
+* [■MySQLとは？: MySQL初心者入門講座](http://mysqlweb.net/category/3969830-1.html)
+* [MySQLとは？データベース管理システム、MySQLを徹底入門！Code部](https://blog.codecamp.jp/what_is_mysql)
+
+### Primary Key
+* 別名「主キー」
+* テーブルの中でレコードを一意に識別する項目
+* ユニークな値が付与されるため同じテーブル内に完全に一致するPrimary Keyを持つレコードは存在しない
+  * 「人名」フィールドに同じ値が入っていて、Primary Keyが異なる場合、それらは同姓同名の別人である
+
+#### 参考文献
+* [１週間で学ぶIT基礎の基礎 - すぐわかるデータベースの基礎（3）：ITpro](http://itpro.nikkeibp.co.jp/members/ITPro/ITBASIC/20000919/1/)
+
+### Index
+* データベースの検索を高速化するための仕組み
+* テーブルとは別に、検索のために最適化された構造を用意しておくこと
+* 手法として「B-Treeインデックス」が有名
+
+#### 参考文献
+* [インデックスの基礎知識](http://www.hi-ho.ne.jp/tsumiki/doc_1.html)
+* [インデックスの意味とメリット・デメリット - SQLite入門](http://www.dbonline.jp/sqlite/index/index1.html)
+
+### Key Value
+* Key と Value を組として保存し、Keyの指定でデータを取得できるようにする仕組み
+* 分散処理に適している
+
+#### 参考文献
+* [触ってみよう！ビッグデータを支えるクラウド技術 - なぜ「キー・バリュー型データストア」が注目されるのか：ITpro](http://itpro.nikkeibp.co.jp/article/COLUMN/20120306/384806/)
+
+### Connection
+* データベースにアクセスする際のアクセス許可証
+* 「アクセスしたいデータベースの指定」「ユーザ名」「パスワード」といった情報を入力して初めてConnectionが与えられ、データベースに接続できる
+
+#### 参考文献
+* [コネクションとは : JavaA2Z](http://www.kab-studio.biz/Programing/JavaA2Z/Word/00000420.html)
+
+### Slave & Master
+* データベースを複数台に増やし同期させる(レプリケーション)際、
+元々存在していたデータベースがMaster、それ以外がSlave
+* Masterが「親」、Slaveが「子」の関係にあたる
+
+#### 参考文献
+* [[ThinkIT] 第6回：データベースの負荷分散とまとめ (1/3)](https://thinkit.co.jp/free/article/0610/1/6/)
+
+### トランザクション
+* 複数のデータ更新をまとめて実行・反映させること
+  * 例 : 預金の振替処理(口座AからN円引き落とす処理 + 口座BにN円振り込む処理)
+
+### 参考文献
+* [第1回　トランザクションについて｜オススメ！OSS-DB情報｜OSS-DB道場｜受験対策｜DBスペシャリストを認定する資格 OSS-DB技術者認定試験](http://www.oss-db.jp/measures/dojo_01.shtml)
+
+ 
