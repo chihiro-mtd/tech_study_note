@@ -38,11 +38,17 @@
 ### セッション
 * 複数ページにまたがるユーザの状態の情報を保持しておくサーバベースの仕組み
 * ブラウザを閉じるまで情報を保持する
+* セッションIDがユーザ識別子として機能する
+  * Webサイトがアクセスを受けたら、ページ生成と並行してセッションIDを生成する
+  * セッションIDが閲覧Webブラウザに送信される
+  * ブラウザがWebページの開示要求と一緒にセッションIDを送信することで、Webサイト側は閲覧者を識別する
 
 #### 参考文献
 * [PHP: 基本的な使用法 - Manual](http://php.net/manual/ja/session.examples.basic.php)
 * [Cookieとセッションをちゃんと理解する - Qiita](http://qiita.com/hththt/items/07136ad74127999df271)
 * [PHPでセッションを使う方法【初心者向け】 | TechAcademyマガジン](http://techacademy.jp/magazine/4970)
+* [Cookieとセッションをちゃんと理解する - Qiita](http://qiita.com/hththt/items/07136ad74127999df271)
+* [「セッション管理」のすべて - ステップ1 ［基本のしくみ］　Webブラウザに情報を預けて、アクセス時に送信させる：ITpro](http://itpro.nikkeibp.co.jp/article/COLUMN/20081010/316687/?rt=nocnt)
 
 ### PHP と Cookie の関係
 * ブラウザを閉じても情報がクライアント側で保持される仕組み
@@ -51,6 +57,17 @@
 #### 参考文献
 * [PHPでCookie(クッキー)を使う方法【初心者向け】 | TechAcademyマガジン](http://techacademy.jp/magazine/4961)
 * [ThinkIT 第8回：Cookieとセッション情報 (1/3)](https://thinkit.co.jp/free/article/0604/7/8/)
+
+### セッションとCookie
+* セッションIDがCookieに保存される
+* セッションIDとWebサーバ上のファイルを照合し、セッション内容を取り出す
+  * Cookieの内容はユーザが読み書きできるものなので、セッションIDはあくまで「整理番号」として格納しておき、実際に利用したいデータはサーバ側で管理する
+* WebサイトからWebブラウザへ送るHTTPレスポンスの拡張ヘッダーにCookieとしてセッションIDを書き込んで送信
+* WebブラウザからWebサイトへ送るHTTPリクエストの拡張ヘッダーにCookieをつけて送信
+* CookieはWebサイトが指定した有効期限までWebブラウザが保持しておくため、この間、いつ同サイトにアクセスしても同じCookieを送ることになる
+
+#### 参考文献
+* [Cookieとセッションをちゃんと理解する - Qiita](http://qiita.com/hththt/items/07136ad74127999df271)
 
 ## データベース
 
