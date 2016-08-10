@@ -68,6 +68,7 @@
 
 #### 参考文献
 * [Cookieとセッションをちゃんと理解する - Qiita](http://qiita.com/hththt/items/07136ad74127999df271)
+* [「セッション管理」のすべて - ステップ1 ［基本のしくみ］　Webブラウザに情報を預けて、アクセス時に送信させる：ITpro](http://itpro.nikkeibp.co.jp/article/COLUMN/20081010/316687/?rt=nocnt)
 
 ## データベース
 
