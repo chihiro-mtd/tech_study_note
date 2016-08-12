@@ -14,4 +14,3 @@ if(is_numeric($num1) && is_numeric($num2)){
 else{
   echo "数字を入力してください";
 }
-?>
