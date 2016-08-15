@@ -15,7 +15,7 @@ function hitAPI(form_data) {
     httpObj.open('POST', "register.php", true);
     httpObj.send(form_data);
     httpObj.onreadystatechange = function() {
-        var disp = document.getElementById("disp");
-        disp.innerHTML = httpObj.responseText;
+        var register_status = document.getElementById("register_status");
+        register_status.innerHTML = httpObj.responseText;
     };
 }
