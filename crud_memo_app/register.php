@@ -2,7 +2,7 @@
 $title = $_POST['title'];
 $text = $_POST['text'];
 
-$new_array = array('id' => 999,'title' => '999番目のメモ','text' => 'これは999番目のメモです');
+$new_array = array('id' => 999,'title' => $title,'text' => $text);
 
 $filename = 'memo.json';
 $handle = fopen($filename, 'r');
