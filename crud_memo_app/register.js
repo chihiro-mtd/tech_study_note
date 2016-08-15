@@ -18,8 +18,12 @@ function hitAPI(form_data) {
         //var register_status = document.getElementById("register_status");
         //register_status.innerHTML = httpObj.responseText;
 
-        if(httpObj.responseText == "ok"){
+        if(httpObj.responseText == "OK"){
           location.href = "./register_ok.html";
+        }
+        else{
+          var register_status = document.getElementById("register_status");
+          register_status.innerHTML = "<h2>NG</h2>";
         }
     };
 }
