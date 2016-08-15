@@ -17,3 +17,5 @@ array_push($memo_list["Memo"],$new_array);
 $handle = fopen($filename, 'w');
 fwrite($handle,json_encode($memo_list,JSON_UNESCAPED_UNICODE));
 fclose($handle);
+
+echo "OK <a href='index.html'>一覧ページへ</a>";
