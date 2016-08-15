@@ -7,9 +7,13 @@ httpObj.onload = function() {
     var txt = "";
     for (var i = 0; i < myData.Memo.length; i++) {
         txt = txt + "<a href='example.html'>" + myData.Memo[i].title + "</a> " + myData.Memo[i].text +
-        " <a href='example.html'>削除</a><br>" ;
+        " <a href='javascript:void(0);' onclick='deleteData(" + i + ");'>削除</a><br>" ;
     }
 
     div_disp.innerHTML = txt;
 }
 httpObj.send("");
+
+function deleteData(num_id){
+  alert(num_id + "番目のメモを削除します。");
+}
