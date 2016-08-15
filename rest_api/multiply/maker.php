@@ -9,6 +9,7 @@ if(is_numeric($num1) && is_numeric($num2)){
 
   $arr = array('date' => $date, 'res' => $res);
 
+  header("Content-Type: text/json;");
   echo json_encode($arr);
 }
 else{
