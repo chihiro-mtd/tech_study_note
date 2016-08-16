@@ -16,8 +16,20 @@ function getTitleAndTextFromJSON(index) {
     httpObj.open("get", "./memo.json", true);
     httpObj.onload = function() {
         myData = JSON.parse(this.responseText);
+
+        var title = myData['Memo'][index]['title'];
+        var text = myData['Memo'][index]['text'];
+
+        console.log(title);
+
+        setTitleAndText(title, text);
     }
     httpObj.send("");
+}
+
+function setTitleAndText(title, text) {
+    document.forms.myForm.id_title.value = title;
+    document.forms.myForm.id_text.value = text;
 }
 
 function hitAPI(form_data) {
