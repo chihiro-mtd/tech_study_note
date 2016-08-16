@@ -14,6 +14,12 @@ httpObj.onload = function() {
 }
 httpObj.send("");
 
-function deleteData(num_id){
-  alert(num_id + "番目のメモを削除します。");
+function deleteData(index){
+  var req = new XMLHttpRequest();
+  req.open('POST',"./delete_data.php", true);
+  req.setRequestHeader("Content-Type" , "application/x-www-form-urlencoded");
+  req.send("index=" + index);
+  req.onload = function() {
+        location.href = "./index.html";
+  };
 }
