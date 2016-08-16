@@ -58,8 +58,8 @@ function hitAPI(form_data) {
         if (httpObj.responseText == "OK") {
             location.href = "./register_ok.html";
         } else {
-            var update_status = document.getElementById("register_status");
-            register_status.innerHTML = "<h2>NG</h2>";
+            var update_status = document.getElementById("update_status");
+            update_status.innerHTML = "<h2>NG</h2>";
         }
     };
 }
