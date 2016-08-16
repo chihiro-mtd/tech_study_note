@@ -13,7 +13,6 @@ if (mb_strlen($title, 'UTF-8') <= 10 && mb_strlen($text, 'UTF-8') <= 30) {
 
     $new_array = array('id' => $num_id, 'title' => $title, 'text' => $text);
 
-
     $memo_list['Memo'][$index]['title'] = $title;
     $memo_list['Memo'][$index]['text'] = $text;
 
