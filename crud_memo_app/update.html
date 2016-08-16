@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>更新ページ</title>
+    <script src="update.js"></script>
+</head>
+
+<body>
+    <h1>更新ページ</h1>
+    <div id="update_status"></div>
+    <div>
+        <form id="myForm" action="">
+            <label for="id_title">タイトル :</label>
+            <br>
+            <input type="text" id="id_title" maxlength="10">
+            <br>
+            <label for="id_text">内容 :</label>
+            <br>
+            <textarea id="id_text" cols="40" rows="4" maxlength="30"></textarea>
+            <br>
+            <input type="button" value="更新" onclick="getParameter();">
+        </form>
+    </div>
+</body>
+
+</html>

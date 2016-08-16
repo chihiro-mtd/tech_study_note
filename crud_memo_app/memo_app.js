@@ -6,7 +6,7 @@ httpObj.onload = function() {
     var myData = JSON.parse(this.responseText);
     var txt = "";
     for (var i = 0; i < myData.Memo.length; i++) {
-        txt = txt + i + " - <a href='example.html'>" + myData.Memo[i].title + "</a> " + myData.Memo[i].text +
+        txt = txt + i + " - <a href='update.html?index=" + i + "'>" + myData.Memo[i].title + "</a> " + myData.Memo[i].text +
         " <a href='javascript:void(0);' onclick='deleteData(" + i + ");'>削除</a><br>" ;
     }
 
