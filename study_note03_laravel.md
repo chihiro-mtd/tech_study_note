@@ -48,10 +48,56 @@ class UserController extends Controller
 }
 ```
 
-index メソッドにviewの表示命令を記述しているため、controllerを介してviewを表示することができる。
+index メソッドにviewの呼び出し命令を記述しているため、controllerを介してviewを表示することができる。
 
 ### 参考文献
 * [Laravel5のお勉強 -第二回 Controllerの追加- - Qiita](http://qiita.com/yu_eguchi/items/d6ac0fa3e0014db536c3)
 * [Laravel入門中。コントローラとビューを使ってみる。 | 三度の飯とエレクトロン](http://blog.katty.in/7087)
 
 ## httpアクセスとcontrollerの関係
+例えば、あるWebページ「test」へのアクセス(http://example.com/test)を考える。  
+最初にapp/http/route.phpの設定を以下のように記述する。
+
+```
+Route::get('test','TestController@index');
+```
+
+これにより、「test」へGETでアクセスが来たらTestControllerの中のindexメソッドが実行される。
+
+次に、app/Http/controllers/TestController.phpの中に以下のような記述を入れる。
+
+```
+class TestController extends Controller {
+
+	public function index()
+	{
+		return view('test');
+	}
+
+}
+```
+
+これにより、viewをcontrollerを通して呼び出すことができる。
+
+最後に、resources/views/test.blade.php ファイルを作成する(Blade はテンプレート名)。
+
+```
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>TEST</h1>
+	</body>
+</html>
+```
+
+この後、ブラウザから http://example.com/test へアクセスすると、上記ファイルのとおり「TEST」と表示される。  
+
+まとめると、流れとしては以下のとおり。  
+
+1. route.phpで、特定URLへのアクセスに対して実行するcontrollerとその中のメソッドを定義
+2. controllerファイルにviewの呼び出し命令を記述
+3. 特定URLにアクセスすると呼びだされたviewファイルが表示される
+
+### 参考文献
+* [Laravel5入門ルート・コントローラー・ビューの基本的な使い方 | はたのブログ](http://tech-swing.net/web/route-view-contorller/)
