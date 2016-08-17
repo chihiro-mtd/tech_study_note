@@ -1,4 +1,6 @@
 # Laravel について
+このノートは下記に示す書籍と各項ごとの参考文献をもとに記述した。  
+[Laravel リファレンス ［Ver.5.1 LTS 対応］ Web 職人好みの新世代 PHP フレームワーク - インプレスブックス](http://book.impress.co.jp/books/1114101107)
 
 ## controllerの作成方法
 はじめに、コマンド `php artisan controller:make [controller名]` を実行する。  
