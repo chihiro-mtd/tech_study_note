@@ -16,3 +16,5 @@
 // });
 
 Route::get('/','myController@index');
+
+Route::get('register','myController@register');

@@ -12,4 +12,8 @@ class myController extends Controller
 
         return view('index')->with('memo_list', $memo_list);
     }
+
+    public function register(){
+      return view('register');
+    }
 }
