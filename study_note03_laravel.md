@@ -4,7 +4,7 @@
 
 ## controllerの作成方法
 はじめに、コマンド `php artisan controller:make [controller名]` を実行する。  
-<span style="color:red">追記 : 現在は `php artisan make:controller [controller名]` にコマンドが変更されている。</span>  
+*追記 : 現在は `php artisan make:controller [controller名]` にコマンドが変更されている。*  
 これにより、 /app/controllers/ に [controller名].php ファイルが生成される。  
 生成されたファイルには、一般的なデータ操作でよく使用されるメソッドが自動で生成される(create、update、destroy等)。  
 
