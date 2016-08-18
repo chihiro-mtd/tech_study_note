@@ -10,6 +10,8 @@ class registerController extends Controller
     }
 
     public function register(){
-      return 'Success!!';
+      $input_value = \Request::all();
+
+      return $input_value;
     }
 }

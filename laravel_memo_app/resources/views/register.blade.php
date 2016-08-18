@@ -17,7 +17,7 @@
             {!! Form::label('text', '内容 :') !!} <br>
             {!! Form::textarea('text', null, array('maxlength' => 30)) !!}
             <br>
-            {!! Form::submit('登録') !!}
+            {!! Form::submit('登録') !!} 
         {!! Form::close() !!}
     </div>
 </body>
