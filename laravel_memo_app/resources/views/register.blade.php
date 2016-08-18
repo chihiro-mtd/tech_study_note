@@ -4,24 +4,21 @@
 
 <head>
     <title>登録ページ</title>
-    <script src="register.js"></script>
 </head>
 
 <body>
     <h1>登録ページ</h1>
     <div id="register_status"></div>
     <div>
-        <form id="myForm" action="">
-            <label for="id_title">タイトル :</label>
+        {!! Form::open() !!}
+            {!! Form::label('title', 'タイトル :') !!} <br>
+            {!! Form::text('title', null,array('maxlength' => 10)) !!}
             <br>
-            <input type="text" id="id_title" maxlength="10">
+            {!! Form::label('text', '内容 :') !!} <br>
+            {!! Form::textarea('text', null, array('maxlength' => 30)) !!}
             <br>
-            <label for="id_text">内容 :</label>
-            <br>
-            <textarea id="id_text" cols="40" rows="4" maxlength="30"></textarea>
-            <br>
-            <input type="button" value="登録" onclick="getValue();">
-        </form>
+            {!! Form::submit('登録') !!}
+        {!! Form::close() !!}
     </div>
 </body>
 
