@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Validator;
+use Illuminate\Http\Request;
 use App\Models\registerModel;
 
 class registerController extends Controller
@@ -11,18 +13,24 @@ class registerController extends Controller
         return view('register');
     }
 
-    public function register()
+    public function register(Request $request)
     {
-        $input_value = \Request::all();
+        $validator = Validator::make($request->all(), [
+          'title' => 'max:10',
+          'text' => 'max:30',
+        ]);
 
+        if ($validator->fails()) {
+            return view('register')->with('status_message', "NG");
+        }
+
+        $input_value = \Request::all();
         $title = $input_value['title'];
         $text = $input_value['text'];
 
         $register_model = new registerModel();
-        $message = $register_model->setNewMemo($title,$text);
+        $register_model->setNewMemo($title, $text);
 
-        if ($message == 'OK') {
-            return view('success');
-        }
+        return view('success');
     }
 }
