@@ -22,7 +22,7 @@ class registerController extends Controller
         $message = $register_model->setNewMemo($title,$text);
 
         if ($message == 'OK') {
-            return redirect()->action('displayListController@index');
+            return view('success');
         }
     }
 }
