@@ -21,17 +21,18 @@ class registerController extends Controller
 
         $json = file_get_contents($json_path);
         $memo_list = json_decode($json, true);
-        $memo_list = $memo_list['Memo'];
+        //$memo_list = $memo_list['Memo'];
 
-        $new_id = count($memo_list);
+        $new_id = count($memo_list['Memo']);
         $new_memo = ['id' => $new_id, 'title' => $title,'text' => $text];
 
-        array_push($memo_list,$new_memo);
+        array_push($memo_list['Memo'],$new_memo);
 
         $memo_list = json_encode($memo_list, JSON_UNESCAPED_UNICODE);
 
         $json_written = File::put($json_path,$memo_list);
 
-        return $memo_list;
+        //return $memo_list;
+        return redirect()->action('myController@index');
     }
 }
