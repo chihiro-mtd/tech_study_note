@@ -1,15 +1,17 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Models;
 
-class myController extends Controller
+use Illuminate\Database\Eloquent\Model;
+
+class displayListModel extends Model
 {
-    public function index()
+    public function getMemoList()
     {
         $json = file_get_contents(storage_path().'/json/memo.json');
         $memo_list = json_decode($json, true);
         $memo_list = $memo_list['Memo'];
 
-        return view('index')->with('memo_list', $memo_list);
+        return $memo_list;
     }
 }

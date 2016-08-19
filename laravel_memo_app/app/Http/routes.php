@@ -15,7 +15,7 @@
 //     return view('welcome');
 // });
 
-Route::get('/','myController@index');
+Route::get('/','displayListController@index');
 
 Route::get('register','registerController@index');
 Route::post('register', 'registerController@register');
