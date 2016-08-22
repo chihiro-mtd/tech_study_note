@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Validator;
-use Illuminate\Http\Request;
+use App\Http\Requests\registerRequest;
 use App\Models\registerModel;
 
 class registerController extends Controller
@@ -13,18 +13,9 @@ class registerController extends Controller
         return view('register');
     }
 
-    public function register(Request $request)
+    public function register(registerRequest $request)
     {
-        $validator = Validator::make($request->all(), [
-            'title' => 'max:10',
-            'text' => 'max:30',
-        ]);
-
-        if ($validator->fails()) {
-            return view('register')->with('status_message', 'NG');
-        }
-
-        $input_value = \Request::all();
+        $input_value = $request->all();
         $title = $input_value['title'];
         $text = $input_value['text'];
 

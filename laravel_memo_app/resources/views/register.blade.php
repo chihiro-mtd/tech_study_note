@@ -9,13 +9,13 @@
 <body>
 <h1>登録ページ</h1>
 <div id="register_status">
-    @if (isset( $status_message ))
-        <h2>{{ $status_message }}</h2>
+    @if (count($errors) > 0)
+        <h2>NG</h2>
     @endif
 </div>
 <div>
     {!! Form::open() !!}
-    {!! Form::label('title', 'テスト') !!} <br>
+    {!! Form::label('title', 'タイトル :') !!} <br>
     {!! Form::text('title', null,array('maxlength' => 10)) !!}
     <br>
     {!! Form::label('text', '内容 :') !!} <br>
