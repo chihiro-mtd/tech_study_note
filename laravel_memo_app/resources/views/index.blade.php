@@ -16,9 +16,9 @@
       <tr>
         <td>{{{ $key }}}</td>
         <td> {{ $memo['id'] }} </td>
-        <td>{{ link_to('',$memo['title']) }}   </td>
+        <td>{{ link_to('',$memo['title']) }}</td>
         <td>{{ $memo['text'] }}</td>
-        <td><a href='' onclick=''>削除</a></td>
+        <td>{{ link_to_action('deleteController@delete', '削除', ['index' => $key]) }}</td>
       </tr>
     @endforeach
 

@@ -11,11 +11,11 @@
     <div id="register_status">
       @if (isset( $status_message ))
         <h2>{{ $status_message }}</h2>
-       @endif
+      @endif
     </div>
     <div>
         {!! Form::open() !!}
-            {!! Form::label('title', 'タイトル :') !!} <br>
+            {!! Form::label('title', 'テスト') !!} <br>
             {!! Form::text('title', null,array('maxlength' => 10)) !!}
             <br>
             {!! Form::label('text', '内容 :') !!} <br>

@@ -19,3 +19,5 @@ Route::get('/','displayListController@index');
 
 Route::get('register','registerController@index');
 Route::post('register', 'registerController@register');
+
+Route::get('delete','deleteController@delete');

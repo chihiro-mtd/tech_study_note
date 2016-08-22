@@ -21,7 +21,7 @@ class registerController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return view('register')->with('status_message', "NG");
+            return view('register')->with('status_message', 'NG');
         }
 
         $input_value = \Request::all();
