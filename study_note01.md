@@ -614,3 +614,21 @@
 #### 参考文献
 * [初めてのAWS Lambda　～AWS Lambdaで始めるイベントドリブンアプリケーション (1/5)：CodeZine（コードジン）](https://codezine.jp/article/detail/8446)
 * [AWS 再入門 AWS Lambda 編 ｜ Developers.IO](http://dev.classmethod.jp/cloud/aws/cm-advent-calendar-2015-aws-re-entering-aws-lambda/)
+
+## 修飾子
+
+### アクセス修飾子
+* public : 全てのクラスからアクセス可能
+* protected : 同じファイル内のクラス、または別ファイルの子クラスからアクセス可能
+* 修飾子なし : 同じファイル内のクラスからアクセス可能
+* private : 自クラス内でのみアクセス可能
+
+#### 参考文献
+* [とほほのJava入門 - 修飾子一覧](http://www.tohoho-web.com/java/modifier.htm)
+* [Java 入門 | アクセス修飾子](http://msugai.fc2web.com/java/permitmod.html)
+
+## スタティック修飾子
+* static : クラスがインスタンス化されていなくても、そのクラス、メソッド、変数などにアクセス可能。ただしメモリに常駐するので圧迫に注意
+
+#### 参考文献
+* [とほほのJava入門 - スタティック修飾子](http://www.tohoho-web.com/java/modifier.htm#static)
