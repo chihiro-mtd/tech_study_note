@@ -13,7 +13,8 @@ class registerModel extends Model
         $json = file_get_contents($json_path);
         $memo_list = json_decode($json, true);
 
-        $new_id = count($memo_list['Memo']);
+        $memo_count = count($memo_list['Memo']);
+        $new_id = $memo_list['Memo'][$memo_count - 1]['id'] + 1;
         $new_memo = ['id' => $new_id, 'title' => $title, 'text' => $text];
 
         array_push($memo_list['Memo'], $new_memo);
