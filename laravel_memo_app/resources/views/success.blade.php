@@ -7,8 +7,8 @@
 </head>
 
 <body>
-    <h1>OK</h1>
-      {{ link_to('/','一覧ページへ') }}
+<h1>OK</h1>
+{{ link_to('/','一覧ページへ') }}
 </body>
 
 </html>

@@ -16,8 +16,8 @@ class registerController extends Controller
     public function register(Request $request)
     {
         $validator = Validator::make($request->all(), [
-          'title' => 'max:10',
-          'text' => 'max:30',
+            'title' => 'max:10',
+            'text' => 'max:30',
         ]);
 
         if ($validator->fails()) {

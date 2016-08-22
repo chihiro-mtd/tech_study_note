@@ -7,23 +7,23 @@
 </head>
 
 <body>
-    <h1>登録ページ</h1>
-    <div id="register_status">
-      @if (isset( $status_message ))
+<h1>登録ページ</h1>
+<div id="register_status">
+    @if (isset( $status_message ))
         <h2>{{ $status_message }}</h2>
-      @endif
-    </div>
-    <div>
-        {!! Form::open() !!}
-            {!! Form::label('title', 'テスト') !!} <br>
-            {!! Form::text('title', null,array('maxlength' => 10)) !!}
-            <br>
-            {!! Form::label('text', '内容 :') !!} <br>
-            {!! Form::textarea('text', null, array('maxlength' => 30)) !!}
-            <br>
-            {!! Form::submit('登録') !!}
-        {!! Form::close() !!}
-    </div>
+    @endif
+</div>
+<div>
+    {!! Form::open() !!}
+    {!! Form::label('title', 'テスト') !!} <br>
+    {!! Form::text('title', null,array('maxlength' => 10)) !!}
+    <br>
+    {!! Form::label('text', '内容 :') !!} <br>
+    {!! Form::textarea('text', null, array('maxlength' => 30)) !!}
+    <br>
+    {!! Form::submit('登録') !!}
+    {!! Form::close() !!}
+</div>
 </body>
 
 </html>
