@@ -3,11 +3,23 @@
 <html>
 
 <head>
-    <title>登録ページ</title>
+    <title>
+        @if(Request::is('register'))
+            登録ページ
+        @else
+            更新ページ
+        @endif
+    </title>
 </head>
 
 <body>
-<h1>登録ページ</h1>
+<h1>
+    @if(Request::is('register'))
+        登録ページ
+    @else
+        更新ページ
+    @endif
+</h1>
 <div id="register_status">
     @if (count($errors) > 0)
         <h2>NG</h2>
@@ -21,7 +33,11 @@
     {!! Form::label('text', '内容 :') !!} <br>
     {!! Form::textarea('text', null, array('maxlength' => 30)) !!}
     <br>
-    {!! Form::submit('登録') !!}
+    @if(Request::is('register'))
+        {!! Form::submit('登録') !!}
+    @else
+        {!! Form::submit('更新') !!}
+    @endif
     {!! Form::close() !!}
 </div>
 </body>

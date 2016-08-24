@@ -15,9 +15,12 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'displayListController@index');
+Route::get('/', 'memoController@displayListIndex');
 
-Route::get('register', 'registerController@index');
-Route::post('register', 'registerController@register');
+Route::get('register', 'memoController@displayFormIndex');
+Route::post('register', 'memoController@register');
 
-Route::get('delete', 'deleteController@delete');
+Route::get('delete', 'memoController@delete');
+
+Route::get('update', 'memoController@displayFormIndex');
+Route::post('update', 'memoController@update');

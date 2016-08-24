@@ -22,9 +22,9 @@
         <tr>
             <td>{{ $key }}</td>
             <td> {{ $memo['id'] }} </td>
-            <td>{{ link_to('',$memo['title']) }}</td>
+            <td>{{ link_to('update', $memo['title'], ['index' => $key]) }}</td>
             <td>{{ $memo['text'] }}</td>
-            <td>{{ link_to_action('deleteController@delete', '削除', ['index' => $key]) }}</td>
+            <td>{{ link_to_action('memoController@delete', '削除', ['index' => $key]) }}</td>
         </tr>
         @endforeach
         </tabel>
