@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\memoModel;
-use App\Http\Requests\registerRequest;
+use App\Models\MemoModel;
+use App\Http\Requests\RegisterRequest;
 
-class memoController extends Controller
+class MemoController extends Controller
 {
     public function displayListIndex()
     {
@@ -57,7 +57,7 @@ class memoController extends Controller
         $model = new memoModel();
         $model->deleteMemo($index);
 
-        return redirect()->action('memoController@displayListIndex');
+        return redirect()->action('MemoController@displayListIndex');
     }
 
     public function update(registerRequest $request)

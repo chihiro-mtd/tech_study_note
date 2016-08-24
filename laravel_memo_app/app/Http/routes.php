@@ -15,12 +15,12 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'memoController@displayListIndex');
+Route::get('/', 'MemoController@displayListIndex');
 
-Route::get('register', 'memoController@displayRegisterIndex');
-Route::post('register', 'memoController@register');
+Route::get('register', 'MemoController@displayRegisterIndex');
+Route::post('register', 'MemoController@register');
 
-Route::get('delete', 'memoController@delete');
+Route::get('delete', 'MemoController@delete');
 
-Route::get('update', 'memoController@displayUpdateIndex');
-Route::post('update', 'memoController@update');
+Route::get('update', 'MemoController@displayUpdateIndex');
+Route::post('update', 'MemoController@update');

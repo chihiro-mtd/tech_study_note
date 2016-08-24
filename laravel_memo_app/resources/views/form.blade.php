@@ -30,6 +30,7 @@
     {{ Form::hidden('index', app('request')->input('index')) }}
     {{ Form::label('title', 'タイトル :') }} <br>
     {{ Form::text('title', $old_title,array('maxlength' => 10)) }}
+
     <br>
     {{ Form::label('text', '内容 :') }} <br>
     {{ Form::textarea('text', $old_text, array('maxlength' => 30)) }}

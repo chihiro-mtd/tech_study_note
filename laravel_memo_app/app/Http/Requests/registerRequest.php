@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class registerRequest extends Request
+class RegisterRequest extends Request
 {
     public function authorize()
     {
