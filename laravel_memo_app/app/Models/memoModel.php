@@ -12,7 +12,6 @@ class memoModel extends Model
         $json_path = storage_path() . '/json/memo.json';
         $json = file_get_contents($json_path);
         $memo_list = json_decode($json, true);
-        //$memo_list = $memo_list['Memo'];
 
         return $memo_list;
     }
@@ -58,9 +57,13 @@ class memoModel extends Model
         return ['old_title' => $old_title,'old_text' => $old_text];
     }
 
-    public function updateMemo($index)
+    public function updateMemo($index,$title,$text)
     {
+        $memo_list = $this->readJsonFile();
 
+        $memo_list['Memo'][$index] = ['id' => $memo_list['Memo'][$index]['id'], 'title' => $title, 'text' => $text];
+
+        $this->writeJsonFile($memo_list);
     }
 
     public function writeJsonFile($memo_list)

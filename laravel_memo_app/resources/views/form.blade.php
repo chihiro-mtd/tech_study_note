@@ -27,6 +27,7 @@
 </div>
 <div>
     {{ Form::open() }}
+    {{ Form::hidden('index', app('request')->input('index')) }}
     {{ Form::label('title', 'タイトル :') }} <br>
     {{ Form::text('title', $old_title,array('maxlength' => 10)) }}
     <br>
