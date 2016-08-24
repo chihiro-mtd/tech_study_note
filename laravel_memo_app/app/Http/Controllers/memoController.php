@@ -17,8 +17,24 @@ class memoController extends Controller
         return view('index')->with('memo_list', $memo_list);
     }
 
-    public function displayFormIndex(){
-        return view('form');
+    public function displayRegisterIndex(){
+        $old_title = null;
+        $old_text = null;
+
+        return view('form')->with(['old_title'=> $old_title, 'old_text' => $old_text]);
+    }
+
+    public function displayUpdateIndex(){
+        $input_value = \Request::all();
+        $index = $input_value['index'];
+
+        $model = new memoModel();
+        $old_memo = $model->getOldMemo($index);
+
+        $old_title = $old_memo['old_title'];
+        $old_text = $old_memo['old_text'];
+
+        return view('form')->with(['old_title'=> $old_title, 'old_text' => $old_text]);
     }
 
     public function register(registerRequest $request)
@@ -50,8 +66,8 @@ class memoController extends Controller
         $title = $input_value['title'];
         $text = $input_value['text'];
 
-        $register_model = new registerModel();
-        $register_model->setNewMemo($title, $text);
+        $model = new memoModel();
+        $model->setNewMemo($title, $text);
 
         return view('success');
     }

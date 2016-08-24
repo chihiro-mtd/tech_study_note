@@ -17,10 +17,10 @@
 
 Route::get('/', 'memoController@displayListIndex');
 
-Route::get('register', 'memoController@displayFormIndex');
+Route::get('register', 'memoController@displayRegisterIndex');
 Route::post('register', 'memoController@register');
 
 Route::get('delete', 'memoController@delete');
 
-Route::get('update', 'memoController@displayFormIndex');
+Route::get('update', 'memoController@displayUpdateIndex');
 Route::post('update', 'memoController@update');

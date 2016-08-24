@@ -26,19 +26,19 @@
     @endif
 </div>
 <div>
-    {!! Form::open() !!}
-    {!! Form::label('title', 'タイトル :') !!} <br>
-    {!! Form::text('title', null,array('maxlength' => 10)) !!}
+    {{ Form::open() }}
+    {{ Form::label('title', 'タイトル :') }} <br>
+    {{ Form::text('title', $old_title,array('maxlength' => 10)) }}
     <br>
-    {!! Form::label('text', '内容 :') !!} <br>
-    {!! Form::textarea('text', null, array('maxlength' => 30)) !!}
+    {{ Form::label('text', '内容 :') }} <br>
+    {{ Form::textarea('text', $old_text, array('maxlength' => 30)) }}
     <br>
     @if(Request::is('register'))
-        {!! Form::submit('登録') !!}
+        {{ Form::submit('登録') }}
     @else
-        {!! Form::submit('更新') !!}
+        {{ Form::submit('更新') }}
     @endif
-    {!! Form::close() !!}
+    {{ Form::close() }}
 </div>
 </body>
 
