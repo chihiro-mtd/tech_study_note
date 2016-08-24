@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\memoModel;
-use Route;
-use Validator;
-use Request;
 use App\Http\Requests\registerRequest;
 
 class memoController extends Controller
