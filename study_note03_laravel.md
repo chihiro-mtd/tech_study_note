@@ -104,3 +104,9 @@ class TestController extends Controller {
 
 ### 参考文献
 * [Laravel5入門ルート・コントローラー・ビューの基本的な使い方 | はたのブログ](http://tech-swing.net/web/route-view-contorller/)
+
+## ファイルやMVCの切り分け
+* テストをする際、ひとつ変更を加えるだけで多くに影響が出るような場合は切り分けずに扱うのも手
+* ModelはControllerよりもDBに近いところで働くため、DBの中身を知っているような振る舞いもある程度は許される
+* Controllerは操作する対象(DB及びModel)が違う場合は積極的に切り分ける
+* 保守のしやすさを考慮した上でまとめたり、切り分けたりする
